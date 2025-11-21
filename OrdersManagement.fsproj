@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Domain  -->
+		<Compile Include="Domain\Result.fs" />
+		<Compile Include="Domain\Email.fs" />
+		<Compile Include="Domain\OrderId.fs" />
+		<Compile Include="Domain\ProductCode.fs" />
+		<Compile Include="Domain\OrderTypes.fs" />
+
+		<!-- Workflows -->
+		<Compile Include="Workflows\OrderValidation.fs" />
+		<Compile Include="Workflows\OrderPlacement.fs" />
+
+		<!-- Program.fs -->
+		<Compile Include="Program.fs" />
+	</ItemGroup>
+
+</Project>
